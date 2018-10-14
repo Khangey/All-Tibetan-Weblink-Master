@@ -1,0 +1,813 @@
+
+<!doctype html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+			a:link,a:visited{
+ 			text-decoration:none; 
+							}
+			a:hover{
+ 			text-decoration:none; 
+							}
+			
+</style>
+		
+</head>
+	<body style="background-image: url(img/bg.jpg); background-repeat: repeat;">
+		<center>
+			<img src="img/logo.png">
+<!-- 		<h1 style="font-size:72px; font-family:Monlam Uni OuChan2; src: url(' /Monlam Uni OuChan2.ttf '), url('/Monlam Uni OuChan2.eot')">ཚང་མ་དྲ་མཛོད།</h1>
+ -->		<td style="width: 120.367px; height: 16.0167px; text-align: center;">
+<!-- <h2><a style="font-size:32px; font-family:Monlam Uni OuChan2; src: url(' /Monlam Uni OuChan2.ttf '), url('/Monlam Uni OuChan2.eot') color: #fff;" href="http://www.bo1376.com/welcome"target="_blank">གེ་སར་རྟ་རྫི་དྲ་བས་བཟོས།</a></h2>
+
+
+ -->
+ <div class="searchWrap">
+                        <div class="searchBar">
+                            <fieldset>
+                                <form action="/Search.shtml" method="get">
+                                    <span>
+                                        <select name="action">
+                                            <option @if(action="=" "music")="" {="" @("selected");="" }="" value="music">歌曲</option>
+                                            <option value="singer" @if="" (action="=" "singer"){="" @("selected");="" }="">歌手</option>
+                                            <option value="special" @if="" (action="=" "special"){@("selected");="" }="">专辑</option>
+                                        </select>
+                                        <img src="/Content/style/img/search_icon.png">
+                                        <input type="text" name="keyWord"><input type="submit" value="搜  索">
+                                    </span>
+                                </form>
+                            </fieldset>
+                        </div>
+                        <input class="searchWrap_search" type="button" onclick="location.href = '/player.shtml'">
+                    </div>
+ 	
+ </td>
+	</center>
+	<br>
+	<br>
+	<h2 style="text-align: center; color:#b82432" >བོད་ཡིག་དྲ་ཚིགས་སྣ་མང་ཀུན་འཛོམས་པ།།  ཚང་མ་དྲ་འདི་སྤྲིན་གྱི་ཕོ་ཉས་བཟོས།།</h2>
+<table style="font-family:Monlam Uni OuChan2; src: url(' /Monlam Uni OuChan2.ttf '), url('/Monlam Uni OuChan2.eot')height: 59px; width: 1024.37px; border-color: #fcfcfc; background-color: #ffffff; margin-left: auto; margin-right: auto;background-image: url(img/bg.jpg); background-repeat: repeat;">
+<tbody>
+<tr style="height: 16.0167px;">
+<td style="width: 148px; height: 16.0167px; text-align: center; vertical-align: top;">
+<h3 style="text-align: right;"><span style="color: #000000;"><a style="color: #000000;" href="https://www.yongzin.com"target="_blank">ཡོངས་འཛིན།</a> </span></h3>
+</td>
+<td style="width: 134px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.amdotibet.cn/"target="_blank">མཚོ་སྔོན་པོ།</a></span></h3>
+</td>
+<td style="width: 139px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" text-decoration:none; href="http://ti.zangdiyg.com/"target="_blank">གངས་ལྗོངས་ཉི་གཞོན།</a></span></h3>
+</td>
+<td style="width: 135px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.tbmgar.com/"target="_blank">བཙན་པོ་མགར།</a></span></h3>
+</td>
+<td style="width: 140px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="https://bo.wikipedia.org/wiki/Wikipedia:%E0%BD%82%E0%BD%99%E0%BD%BC%E0%BC%8B%E0%BD%84%E0%BD%BC%E0%BD%A6%E0%BC%8D"target="_blank">ཝེ་ཁེ་རིག་མཛོད།</a><br></span></h3>
+</td>
+<td style="width: 145px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.bo1376.com/gzh/"target="_blank">སྤྱི་སྟེགས་ཀུན་འདུས།</a></span></h3>
+</td>
+<td style="width: 137px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.tibetanfont.org/"target="_blank">ཡིག་གཟུགས།</a></span></h3>
+</td>
+</tr>
+</tbody>
+</table>
+<br>
+<br>
+
+<table style="font-family:Monlam Uni OuChan2; src: url(' /Monlam Uni OuChan2.ttf '), url('/Monlam Uni OuChan2.eot') height: 230px; width: 1166px; border-color: #fcfcfc; background-color: #ffffff; margin-left: auto; margin-right: auto;background-image: url(img/bg.jpg); background-repeat: repeat;">
+<tbody>
+<tr style="height: 49px;">
+<td style="width: 139.2px; height: 245px; text-align: right; vertical-align: top;" rowspan="5">
+<h2 style="text-align: right;color:#b82432"><span style="color:#b82432;"><strong>དད་པའི་ཨ་ལོང་།</strong></span></h2>
+<p> </p>
+</td>
+<td style="width: 140.317px; height: 49px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.tb1025.cn/"target="_blank">དགེ་ལུགས་དྲ་བ།</a></span></h3>
+</td>
+<td style="width: 139.5px; height: 49px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="https://kagyuoffice.org/"target="_blank">ཀརྨ་བཀའ་རྒྱུད།</a></span></h3>
+</td>
+<td style="width: 139.283px; height: 49px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.tsechen.org/index.php/tibetan/"target="_blank">ས་སྐྱ་བརྩེ་ཆེན།</a></span></h3>
+</td>
+<td style="width: 139.033px; height: 49px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.beita.org/tibet/"target="_blank">ནང་རིག་གཏེར་མཛོད།</a></span></h3>
+</td>
+<td style="width: 138.933px; height: 49px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.bo.jetsongkhapa.org"target="_blank">རྗེ་ཙོང་ཁ་དྲ་བ།</a></span></h3>
+</td>
+<td style="width: 138.917px; height: 49px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="https://tibetan.zhibeifw.com/"target="_blank">ཤེས་རིག་བྱམས་བརྩེ།</a></span></h3>
+</td>
+<td style="width: 138.817px; height: 49px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.buddhilight.com/"target="_blank">བྱང་ཆུབ་འོད།</a></span></h3>
+</td>
+</tr>
+<tr style="height: 49px;">
+<td style="width: 140.317px; height: 49px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.gyalwangdrukpa.org/"target="_blank">རྒྱལ་དབང་འབྲུག་པ།</a></span></h3>
+</td>
+<td style="width: 139.5px; height: 49px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.gsungrab.org/bo/home.php"target="_blank">དམ་པའི་གསུང་རབ།</a></span></h3>
+</td>
+<td style="width: 139.283px; height: 49px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.bdrc.info/?locale=bo#!footer/about/newhome"target="_blank">ནང་བསྟན་དཔེ་ཚོགས།</a></span></h3>
+</td>
+<td style="width: 139.033px; height: 49px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.gamalgonchen.com/"target="_blank">དགའ་མལ་དགོན་པ།</a></span></h3>
+</td>
+<td style="width: 138.933px; height: 49px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://ttbtv.org/"target="_blank">ཐའེ་ཝན་ནང་བསྟན།</a></span></h3>
+</td>
+<td style="width: 138.917px; height: 49px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://zyxgjfxy.cn/cn/recruit/201803/t20180321_5569859.html"target="_blank">ནང་བསྟན་སློབ་གླིང་།</a></span></h3>
+</td>
+<td style="width: 138.817px; height: 49px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="https://bo.wikipedia.org/wiki/%E0%BD%96%E0%BD%BC%E0%BD%91%E0%BC%8B%E0%BD%94%E0%BD%A0%E0%BD%B2%E0%BC%8B%E0%BD%91%E0%BD%82%E0%BD%BC%E0%BD%93%E0%BC%8B%E0%BD%A6%E0%BE%A1%E0%BD%BA%E0%BD%A0%E0%BD%B2%E0%BC%8B%E0%BD%90%E0%BD%BC%E0%BC%8D"target="_blank">དགོན་སྡེའི་ཐོ།</a><br></span></h3>
+</td>
+</tr>
+<tr style="height: 49px;">
+<td style="width: 140.317px; height: 49px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="https://khyentsefoundation.org/"target="_blank">རྫོང་ས་མཁྱེན་བརྩེ།</a></span></h3>
+</td>
+<td style="width: 139.5px; height: 49px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="https://melongyeshe.org/"target="_blank">མེ་ལོང་ཡེ་ཤེས།</a></span></h3>
+</td>
+<td style="width: 139.283px; height: 49px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://gyalshenbondra.com/"target="_blank">རྒྱལ་གཤེན་བོན་སྒྲ</a></span></h3>
+</td>
+<td style="width: 139.033px; height: 49px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://theyungdrungbon.com/"target="_blank">གཡང་དྲུང་བོན།</a></span></h3>
+</td>
+<td style="width: 138.933px; height: 49px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.dzogchengonpa.org/"target="_blank">རྫོགས་ཆེན་པ།</a></span></h3>
+</td>
+<td style="width: 138.917px; height: 49px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="https://itibettravel.com/category/blog/culture/"target="_blank">གནས་ཡིག</a></span></h3>
+</td>
+<td style="width: 138.817px; height: 49px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="https://zw.ptz.cc/plus/list.php?tid=78"target="_blank">ནང་བསྟན་ལོ་ཐོ།</a></span></h3>
+</td>
+</tr>
+<tr style="height: 49px;">
+<td style="width: 140.317px; height: 49px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.84000.co"target="_blank">བརྒྱད་ཁྲི་བཞི་སྟོང་།</a></span></h3>
+</td>
+<td style="width: 139.5px; height: 49px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.uma-tibet.org"target="_blank">དབུ་མ་ཞིབ་འཇུག</a></span></h3>
+</td>
+<td style="width: 139.283px; height: 49px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.jokhangsculpture.com"target="_blank">ཇོ་ཁང་གཏེར་མཛོད།</a></span></h3>
+</td>
+<td style="width: 139.033px; height: 49px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="https://studybuddhism.com"target="_blank">ནང་རིག་སློབ་སྦྱོང་།</a><br></span></h3>
+</td>
+<td style="width: 138.933px; height: 49px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="https://www.kumbum.org/"target="_blank">སྐུ་འབུམ་དགོན་པ།</a></span></h3>
+</td>
+<td style="width: 138.917px; height: 49px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.ngakmang.net/"target="_blank">སྔགས་མང་དྲ་བ།</a></span></h3>
+</td>
+<td style="width: 138.817px; height: 49px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="https://en.wikipedia.org/wiki/Khenpo_Sodargye"target="_blank">བསོད་དར་རྒྱས།</a></span></h3>
+</td>
+</tr>
+<tr style="height: 49px;">
+<td style="width: 140.317px; height: 49px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.gamalgonchen.com/bo/"target="_blank">དགའ་མལ་དགོན་ཆེན།</a></span></h3>
+</td>
+<td style="width: 139.5px; height: 49px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.dzogchendrapa.com/"target="_blank">རྫོགས་ཆེན་དྲ་བ།</a></span></h3>
+</td>
+<td style="width: 139.283px; height: 49px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.zmwh.org/tibetanzm/index.asp"target="_blank">གསང་སྔགས་དྲ་བ།</a></span></h3>
+</td>
+<td style="width: 139.033px; height: 49px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.himalayabon.com/"target="_blank">ཧི་མ་ལ་ཡའི་བོན།</a></span></h3>
+</td>
+<td style="width: 138.933px; height: 49px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.rgbm123.com/"target="_blank">རེབ་གོང་བོན་མང་།</a></span></h3>
+</td>
+<td style="width: 138.917px; height: 49px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.qiongbuwang.com/template/index.asp"target="_blank">ཁྱུང་པོ་དྲ་བ།</a></span></h3>
+</td>
+<td style="width: 138.817px; height: 49px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="https://zw.ptz.cc/"target="_blank">བྱང་ཆུབ་གླིང་།</a></span></h3>
+</td>
+</tr>
+</tbody>
+</table>
+<br>
+<table style="font-family:Monlam Uni OuChan2; src: url(' /Monlam Uni OuChan2.ttf '), url('/Monlam Uni OuChan2.eot') height: 59px; width: 1177px; border-color: #fcfcfc; background-color: #ffffff; margin-left: auto; margin-right: auto;background-image: url(img/bg.jpg); background-repeat: repeat;">
+<tbody>
+<tr style="height: 16.0167px;">
+<td style="width: 148.517px; height: 16.0167px; text-align: center; vertical-align: top;">
+<h2 style="text-align: right;"><span style="color:#b82432;"><strong>ནོར་བུ་བཟང་པོ།</strong> </span></h2>
+</td>
+<td style="width: 134.35px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.zangbooo.com/mall/"target="_blank">ཚོང་དཔོན་དྲ་བ།</a></span></h3>
+</td>
+<td style="width: 139.117px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.qhmhhb.cn/shop/index.php?act=article&amp;op=article&amp;ac_id=9"target="_blank">མཚོ་བྱང་ཚོང་ར།</a></span></h3>
+</td>
+<td style="width: 135.7px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.tcansee.com/"target="_blank">སྤྱན་གསལ།</a></span></h3>
+</td>
+<td style="width: 140.967px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.tibetanbabybooks.com/Default.asp"target="_blank">བྱིས་དེབ་ཚོང་ར།</a></span></h3>
+</td>
+<td style="width: 145.433px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="https://weidian.com/?userid=1216945957&amp;wfr=wx_profile"target="_blank">འགྱུར་མེད་དཔེ་ཁང་།</a></span></h3>
+</td>
+<td style="width: 137.783px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="https://www.zhomei.com/"target="_blank">ཡུལ་ཤུལ་སྒྲོན་མེ།</a></span></h3>
+</td>
+<td style="width: 143.133px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="#">བོད་ཡུལ་ནོར་རྫོང་།</a></span></h3>
+</td>
+</tr>
+</tbody>
+</table>
+<br>
+<table style="font-family:Monlam Uni OuChan2; src: url(' /Monlam Uni OuChan2.ttf '), url('/Monlam Uni OuChan2.eot') height: 115px; width: 1173px; border-color: #fcfcfc; background-color: #ffffff; margin-left: auto; margin-right: auto;background-image: url(img/bg.jpg); background-repeat: repeat;">
+<tbody>
+<tr style="height: 17px;">
+<td style="width: 147px; height: 47px; text-align: center; vertical-align: top;" rowspan="3">
+<h2 style="text-align: right;color:#b82432"><span style="color:#b82432;"><strong>གསར་འགྱུར་མེལོང་།</strong></span></h2>
+<h1 style="text-align: right;"> </h1>
+</td>
+<td style="width: 135px; height: 17px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://tibet.people.com.cn/"target="_blank">མི་དམངས་དྲ་བ།</a></span></h3>
+</td>
+<td style="width: 139px; height: 17px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://xizang.news.cn/"target="_blank">ཤིན་ཧ་གསར་འགྱུར།</a></span></h3>
+</td>
+<td style="width: 133px; height: 17px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://tibet.cpc.people.com.cn/"target="_blank">གོང་ཁྲན་ཏང་།</a></span></h3>
+</td>
+<td style="width: 140px; height: 17px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://tibetan.qh.gov.cn/"target="_blank">མཚོ་སྔོན་སྲིད་གཞུང་།</a></span></h3>
+</td>
+<td style="width: 144px; height: 17px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://ti.tibet3.com/"target="_blank">ཀྲུང་གོ་བོད་ཀྱི་དྲ་བ།</a></span></h3>
+</td>
+<td style="width: 137.867px; height: 17px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://ti.zangdiyg.com/"target="_blank">གངས་ལྗོངས་ཉི་གཞོན།</a></span></h3>
+</td>
+<td style="width: 141.133px; height: 17px; text-align: center;">
+<h3><span style="color: #000000;"><a style="width: 142.633px; height: 16.0167px; text-align: center; color: #000000;" href="http://tb.tibet.cn/">ཀྲུང་གོའི་བོད་ལྗོངས།</a></span></h3>
+</td>
+</tr>
+<tr style="height: 14px;">
+<td style="width: 135px; height: 14px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://tibet.aba-news.com.cn/"target="_blank">རྔ་བའི་དུས་བབ།</a></span></h3>
+</td>
+<td style="width: 139px; height: 14px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.shangri-latibet.cn/"target="_blank">སེམས་ཀྱི་ཉི་ཟླ།</a></span></h3>
+</td>
+<td style="width: 133px; height: 14px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://ti.kbcmw.com/"target="_blank">ཁམས་པའི་དྲ་བ།</a><br></span></h3>
+</td>
+<td style="width: 140px; height: 14px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.amdotibet.cn/html/dt/"target="_blank">མཚོ་སྔོན་པོ་གསར་འགྱུར།</a></span></h3>
+</td>
+<td style="width: 144px; height: 14px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="https://www.yongzin.com/news/"target="_blank">ཡོངས་འཛིན་གསར་འགྱུར།</a></span></h3>
+</td>
+<td style="width: 137.867px; height: 14px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://tb.chinatibetnews.com/"target="_blank">བོད་ལྗོངས་གསར་འགྱུར།</a></span></h3>
+</td>
+<td style="width: 141.133px; height: 14px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://zw.banma.gov.cn/"target="_blank">པདྨ་སྲིད་གཞུང་།</a></span></h3>
+</td>
+</tr>
+<tr style="height: 16px;">
+<td style="width: 135px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.zw.haixi.gov.cn/"target="_blank">མཚོ་ནུབ་སྲིད་གཞུང་།</a></span></h3>
+</td>
+<td style="width: 139px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.0976ly.com/zangwen/"target="_blank">ཡུལ་ཤུལ་གནས་སྐོར།</a></span></h3>
+</td>
+<td style="width: 133px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://tb.gnxblzx.com/"target="_blank">མདོ་ལྷོ་སྲིད་གཞུང་།</a></span></h3>
+</td>
+<td style="width: 140px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.trikaculture.com/"target="_blank">རྨ་ཡུལ་ཁྲི་ཀ</a></span></h3>
+</td>
+<td style="width: 144px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://qhtongde.gov.cn/default/website/index_zw.jsp"target="_blank">འབའ་རྫོང་སྲིད་གཞུང་།</a></span></h3>
+</td>
+<td style="width: 137.867px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="width: 137.4px; height: 16.0167px; text-align: center; color: #000000;" href="http://www.bodrigs.com/">མཚོ་སྔོན་བོད་རིགས་དྲ་བ།</a></span></h3>
+</td>
+<td style="width: 141.133px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.mjtc.org.cn/tibet/"target="_blank">ཀན་སུའུ་ཁྲིམས་དཔོན།</a></span></h3>
+</td>
+</tr>
+</tbody>
+</table>
+<br>
+<table style="font-family:Monlam Uni OuChan2; src: url(' /Monlam Uni OuChan2.ttf '), url('/Monlam Uni OuChan2.eot') height: 170px; width: 1174px; border-color: #fcfcfc; background-color: #ffffff; margin-left: auto; margin-right: auto;background-image: url(img/bg.jpg); background-repeat: repeat;">
+<tbody>
+<tr style="height: 16.0167px;">
+<td style="width: 147.633px; height: 16.0167px; text-align: center; vertical-align: top;" rowspan="3">
+<h2 style="text-align: right;color:#b82432"><span style="color:#b82432;"><strong>བརྙན་དབྱངས་དོ་ར།</strong></span></h2>
+</td>
+<td style="width: 135.233px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.video.yongzin.com"target="_blank">ཡོངས་འཛིན་བརྙན་རིས།</a> </span></h3>
+</td>
+<td style="width: 139.033px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://video.tibetcul.com/"target="_blank">རིག་གནས་བརྙན་ཟློས།</a></span></h3>
+</td>
+<td style="width: 135.033px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.xzitv.com/tibetan/"target="_blank">ནོར་ནོར་བརྙན་ཟློས།</a></span></h3>
+</td>
+<td style="width: 140.05px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.lumicosm.com/"target="_blank">འོད་ཁམས།</a></span></h3>
+</td>
+<td style="width: 144.45px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.filmtbt.com/"target="_blank">པྲ་དྲ་བརྙན་རིས།</a></span></h3>
+</td>
+<td style="width: 137.933px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://ti.tibet3.com/video/"target="_blank">བོད་དྲ་བརྙན་རིས།</a></span></h3>
+</td>
+<td style="width: 142.633px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.qhtb.cn/"target="_blank">མཚོ་སྔོན་བརྙན་འཕྲིན།</a></span></h3>
+</td>
+</tr>
+<tr style="height: 16.0167px;">
+<td style="width: 135.233px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="https://music.yongzin.com"target="_blank">ཡོངས་འཛིན་རོལ་དབྱངས།</a></span></h3>
+</td>
+<td style="width: 139.033px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://music.tibet3.com/"target="_blank">བོད་དྲ་རོལ་དབྱངས།</a></span></h3>
+</td>
+<td style="width: 135.033px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.25xz.com"target="_blank">བོད་རིགས་གླུ་དབྱངས།</a></span></h3>
+</td>
+<td style="width: 140.05px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://tibetan.cctv.com/"target="_blank">ཀྲུང་དབྱང་བརྙན་འཕྲིན།</a></span></h3>
+</td>
+<td style="width: 144.45px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://movie.tibetcul.com/"target="_blank">བོད་འབྲེལ་བརྙན་ཟློས།</a></span></h3>
+</td>
+<td style="width: 137.933px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.dongdongyy.com/"target="_blank">དུང་དུང་རོལ་དབྱངས།</a></span></h3>
+</td>
+<td style="width: 142.633px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.qhtb.cn/radio/layi/"target="_blank">སྡེ་ཆེན་རྩེད་ར།</a></span></h3>
+</td>
+</tr>
+<tr style="height: 16.0167px;">
+<td style="width: 135.233px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://tb.kangbatv.com/"target="_blank">ཁམས་པའི་བརྙན་འཕྲིན།</a></span></h3>
+</td>
+<td style="width: 139.033px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.vtibet.com/tb/sp/"target="_blank">བོད་ལྗོངས་བརྙན་འཕྲིན།</a></span></h3>
+</td>
+<td style="width: 135.033px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.tibetcnr.com/"target="_blank">བོད་སྐད་རླུང་འཕྲིན།</a></span></h3>
+</td>
+<td style="width: 140.05px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.tibetcm.com/contemporary/prose/2017-02-01/8262.html"target="_blank">གངས་ལྗོངས་ཁུ་་བྱུག</a></span></h3>
+</td>
+<td style="width: 144.45px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.vtibet.com/tb/"target="_blank">བོད་ལྗོངས་འཕྲིན་དྲ།</a></span></h3>
+</td>
+<td style="width: 146px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="https://www.tibrooster.net/" target="_blank">དེ་ཕོ་གསར་འགྱུར།</a></span></h3>
+</td>
+<td style="width: 142.633px; height: 16.0167px; text-align: center;">
+<h2><span style="color: #000000;"><a style="color: #000000;" href="https://www.bo1376.com/new/" target="_blank">དུས་བབ་དྲ་བ།</a></span></h2>
+</td>
+</tr>
+</tbody>
+</table>
+<br>
+<table style="font-family:Monlam Uni OuChan2; src: url(' /Monlam Uni OuChan2.ttf '), url('/Monlam Uni OuChan2.eot') height: 169px; width: 1169px; border-color: #fcfcfc; background-color: #ffffff; margin-left: auto; margin-right: auto;background-image: url(img/bg.jpg); background-repeat: repeat;">
+<tbody>
+<tr style="height: 16.0167px;">
+<td style="width: 146.5px; height: 16.0167px; text-align: center; vertical-align: top;" rowspan="3">
+<h2 style="text-align: right;color:#b82432"><span style="color:#b82432;"><strong>སློབ་རའི་འགྱུར་ཁུག</strong></span></h2>
+</td>
+<td style="width: 134.5px; height: 16.0167px; text-align: center;">
+<h4><span style="color: #000000;"><a style="color: #000000;" href="http://cms.xbmu.edu.cn/frontIndex.action?siteId=84"target="_blank">ནུབ་བྱང་མི་རིགས་སློབ་ཆེན།</a></span></h4>
+</td>
+<td style="width: 138.517px; height: 16.0167px; text-align: center;">
+<h4><span style="color: #000000;"><a style="color: #000000;" href="http://www.muc.edu.cn/content/details_24_133.html"target="_blank">ཀྲུང་དབྱང་མི་རིགས་སློབ་ཆེན།</a></span></h4>
+</td>
+<td style="width: 135.083px; height: 16.0167px; text-align: center;">
+<h4><span style="color: #000000;"><a style="color: #000000;" href="http://zxy.swun.edu.cn/zw/zwindex.htm"target="_blank">ལྷོ་ནུབ་མི་རིགས་སློབ་ཆེན།</a></span></h4>
+</td>
+<td style="width: 139px; height: 16.0167px; text-align: center;">
+<h4><span style="color: #000000;"><a style="color: #000000;" href="http://bo.qhmu.edu.cn:81/"target="_blank">མཚོ་སྔོན་མི་རིགས་སློབ་ཆེན།</a></span></h4>
+</td>
+<td style="width: 144.417px; height: 16.0167px; text-align: center;">
+<h4><span style="color: #000000;"><a style="color: #000000;" href="http://www.utibet.edu.cn/index.html"target="_blank">བོད་ལྗོངས་སློབ་ཆེན།</a></span></h4>
+</td>
+<td style="width: 137.517px; height: 16.0167px; text-align: center;">
+<h4><span style="color: #000000;"><a style="color: #000000;" href="http://zxy.gnun.edu.cn/"target="_blank">ཀན་ལྷོ་དགེ་འོས་སློབ་གླིང་།</a></span></h4>
+</td>
+<td style="width: 141.467px; height: 16.0167px; text-align: center;">
+<h4><span style="color: #000000;"><a style="color: #000000;" href="http://msy.qhnu.edu.cn/"target="_blank">མཚོ་སྔོན་དགེ་འོས་སློབ་ཆེན།</a></span></h4>
+</td>
+</tr>
+<tr style="height: 16.0167px;">
+<td style="width: 134.5px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.teducn.com/"target="_blank">བོད་ཀྱི་སློབ་གསོ་དྲ་བ།</a></span></h3>
+</td>
+<td style="width: 138.517px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://ypt.gzzedu.gov.cn/fromtEnd/ganZiJiaoYuZhiHuiYunPingTai.action?cid=3"target="_blank">དཀར་མཛེས་སློབ་གསོ།</a></span></h3>
+</td>
+<td style="width: 135.083px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://jzschool.com/"target="_blank">གཅན་ཚ་སློབ་འབྲིང་།</a></span></h3>
+</td>
+<td style="width: 139px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.tibetgz.com/"target="_blank">ཁམས་པའི་སློབ་འབྲིང་།</a></span></h3>
+</td>
+<td style="width: 144.417px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.jzxewx.com/"target="_blank">མར་ཁུ་ཐང་སློབ་ཆུང་།</a></span></h3>
+</td>
+<td style="width: 137.517px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://tibetanecology.org/"target="_blank">སྐྱེ་ཁམས།</a></span></h3>
+</td>
+<td style="width: 141.467px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.jmjzjy.com/Gsbw.asp"target="_blank">ཤེས་རིག་སློབ་གླིང་།</a></span></h3>
+</td>
+</tr>
+<tr style="height: 16.0167px;">
+<td style="width: 134.5px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="www.sherig.org/tb"target="_blank">ཀུན་ཕན་སློབ་གྲྭ</a></span></h3>
+</td>
+<td style="width: 138.517px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.tibetedu.net/"target="_blank">བོད་ཡིག་སློབ་གསོ་དྲ་བ།</a></span></h3>
+</td>
+<td style="width: 135.083px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.aniu.org/"target="_blank">བདེ་ཆེན་སློབ་ཆུང་།</a></span></h3>
+</td>
+<td style="width: 139px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.tibetmath.org/"target="_blank">རྩིས་རིག་ཤེས་བྱ།</a></span></h3>
+</td>
+<td style="width: 144.417px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.zhiduomiddleschool.com/"target="_blank">འབྲི་སྟོད་སློབ་འབྲིང་།</a></span></h3>
+</td>
+<td style="width: 137.517px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.tibetanms.cn/"target="_blank">བོད་ཀྱི་སློབ་འབྲིང་།</a></span></h3>
+</td>
+<td style="width: 141.467px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"> </span></h3>
+</td>
+</tr>
+</tbody>
+</table>
+<br>
+<table style="font-family:Monlam Uni OuChan2; src: url(' /Monlam Uni OuChan2.ttf '), url('/Monlam Uni OuChan2.eot') height: 64px; width: 1170px; border-color: #fcfcfc; background-color: #ffffff; margin-left: auto; margin-right: auto;background-image: url(img/bg.jpg); background-repeat: repeat;">
+<tbody>
+<tr style="height: 16.0167px;">
+<td style="width: 148.65px; height: 16.0167px; text-align: center;">
+<h2 style="text-align: right;color:#b82432"><span style="color:#b82432;"><strong>རྒྱུད་བཞིའི་བྱིན་རླབས།</strong></span></h2>
+</td>
+<td style="width: 134.05px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.gsorig.com/"target="_blank">གསོ་རིག་དྲ་བ།</a></span></h3>
+</td>
+<td style="width: 138.6px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.arurahp.com/"target="_blank">མཚོ་སྔོན་བོད་སྨན་ཁང་།</a></span></h3>
+</td>
+<td style="width: 134.033px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://tibetmdc.cn/"target="_blank">བོད་ཀྱི་གསོ་རིག</a></span><span style="color: #000000;"> <br></span></h3>
+</td>
+<td style="width: 139.533px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.jmtm.com.cn/JM/ti/"target="_blank">འཇིགས་མེད་བོད་སྨན།</a></span></h3>
+</td>
+<td style="width: 144.1px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.commuhealtibet.org/"target="_blank">སྤྱི་ཚོགས་འཕྲོད་བསྟེན།</a></span></h3>
+</td>
+<td style="width: 136.767px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://bod.sorig.net/"target="_blank">རྒྱལ་སྤྱིའི་གསོ་རིག་ཁང་།</a></span></h3>
+</td>
+<td style="width: 142.267px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.mentsee.org/"target="_blank">སྨན་རྩིས།</a></span></h3>
+</td>
+</tr>
+</tbody>
+</table>
+<br>
+<table style="font-family:Monlam Uni OuChan2; src: url(' /Monlam Uni OuChan2.ttf '), url('/Monlam Uni OuChan2.eot') height: 57px; width: 1165px; border-color: #fcfcfc; background-color: #ffffff; margin-left: auto; margin-right: auto;background-image: url(img/bg.jpg); background-repeat: repeat;">
+<tbody>
+<tr style="height: 16.0167px;">
+<td style="width: 147.533px; height: 16.0167px; text-align: center;">
+<h2 style="text-align: right;color:#b82432"><span style="color:#b82432;"><strong>ན་ཆུང་ལྡུམ་ར།</strong></span></h2>
+</td>
+<td style="width: 133.25px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.qhtb.cn/adtv/gsh/"target="_blank">མེ་ཏོག་གངས་ལྷ།</a></span></h3>
+</td>
+<td style="width: 138.083px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.qhtb.cn/radio/sher/"target="_blank">ཨ་ཅེ་ནོར་བུ་འཚོ།</a></span></h3>
+</td>
+<td style="width: 133.533px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="https://www.wildyaks.com"target="_blank">གཡག་རྒོད།</a></span></h3>
+</td>
+<td style="width: 139px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.zomshow.com/"target="_blank">འཛོམས་ཤོག</a></span></h3>
+</td>
+<td style="width: 143.583px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.tibetanbabybooks.com/Default.asp"target="_blank">བྱིས་དེབ་དྲ་བ།</a></span></h3>
+</td>
+<td style="width: 136.283px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.dhumra.com/"target="_blank">ལྡུམ་ར།</a></span></h3>
+</td>
+<td style="width: 141.733px; height: 16.0167px; text-align: center;"> 
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.bo1376.com/damgyu"target="_blank">གནའ་གཏམ་དྲ་བ།</a></span></h3>
+</td>
+</tr>
+</tbody>
+</table>
+<br>
+<table style="font-family:Monlam Uni OuChan2; src: url(' /Monlam Uni OuChan2.ttf '), url('/Monlam Uni OuChan2.eot') height: 57px; width: 1168px; border-color: #fcfcfc; background-color: #ffffff; margin-left: auto; margin-right: auto;background-image: url(img/bg.jpg); background-repeat: repeat;">
+<tbody>
+<tr style="height: 16.0167px;">
+<td style="width: 148.983px; height: 16.0167px; text-align: center; vertical-align: top;">
+<h2 style="text-align: right;color:#b82432"><span style="color:#b82432;"><strong>སྦྲང་ཆར་བསིལ་མ།</strong></span></h2>
+</td>
+<td style="width: 133.717px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.tbnewyouth.com/"target="_blank">ན་གཞོན་གསར་བ།</a> </span></h3>
+</td>
+<td style="width: 138.267px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.tibetcm.com/"target="_blank">མཆོད་མེ་རྩོམ་རིག</a></span></h3>
+</td>
+<td style="width: 133.7px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.tsanpo.com/"target="_blank">བཙན་པོ་རྩོམ་རིག</a></span></h3>
+</td>
+<td style="width: 139.2px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="https://www.lhatso.com/"target="_blank">ཡིད་ལྷུང་ལྷ་མཚོ།</a></span></h3>
+</td>
+<td style="width: 143.767px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.qhmzcbs.com:808/"target="_blank">སྦྲང་ཆར།</a></span></h3>
+</td>
+<td style="width: 136.433px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.tongdrol.com/"target="_blank">མཐོང་གྲོལ།</a><br></span></h3>
+</td>
+<td style="width: 141.933px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://wx.tibetcul.com/"target="_blank">བོད་མིའི་རིག་གནས།</a></span></h3>
+</td>
+</tr>
+</tbody>
+</table>
+<br>
+<table style="font-family:Monlam Uni OuChan2; src: url(' /Monlam Uni OuChan2.ttf '), url('/Monlam Uni OuChan2.eot') height: 56px; width: 1177px; border-color: #fcfcfc; background-color: #ffffff; margin-left: auto; margin-right: auto;background-image: url(img/bg.jpg); background-repeat: repeat;">
+<tbody>
+<tr style="height: 16px;">
+<td style="width: 149.25px; height: 16px; text-align: center; vertical-align: top;">
+<h2 style="text-align: right;color:#b82432"><span style="color:#b82432;"><strong>ལྷད་མེད་ཕ་སྐད།<br></strong></span></h2>
+</td>
+<td style="width: 134.917px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"> <a style="color: #000000;" href="https://www.lexilogos.com/clavier/tibetain.htm"target="_blank">ནེ་ཙོ་བོད་སྐད།</a></span></h3>
+</td>
+<td style="width: 139.517px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.zyw.xizang.gov.cn/xzyw/messageXZ!firstPageXZ.do"target="_blank">བོད་ལྗོངས་སྐད་ཡིག</a><br></span></h3>
+</td>
+<td style="width: 134.9px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.zyw.xizang.gov.cn/xzyw/messageXZ!xcsycdPageXZ.do"target="_blank">བཀས་བཅད་མིང་ཚིག</a></span></h3>
+</td>
+<td style="width: 140.45px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.tbmgar.com/zwndbw.asp?id=2754&amp;NdRak_ID=ZamqowLc&amp;lcqwID=340#ndbwNdCam"target="_blank">ས་མིང་ཤན་སྦྱར།</a></span></h3>
+</td>
+<td style="width: 145.05px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.tsikzoe.net/"target="_blank">ཚིག་མཛོད་དྲ་བ།</a><br></span></h3>
+</td>
+<td style="width: 137.7px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="www.khabdha.org"target="_blank">ཁ་བརྡ།</a><br></span></h3>
+</td>
+<td style="width: 143.217px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.somdom.com/tibetan"target="_blank">གསོམ་སྡོམ་བོད་སྐད།</a></span></h3>
+</td>
+</tr>
+</tbody>
+</table>
+<br>
+<table style="font-family:Monlam Uni OuChan2; src: url(' /Monlam Uni OuChan2.ttf '), url('/Monlam Uni OuChan2.eot') height: 123px; width: 1175px; border-color: #fcfcfc; background-color: #ffffff; margin-left: auto; margin-right: auto;background-image: url(img/bg.jpg); background-repeat: repeat;">
+<tbody>
+<tr style="height: 16.0167px;">
+<td style="width: 149.033px; height: 16.0167px; text-align: center; vertical-align: top;" rowspan="2">
+<h2 style="text-align: right;color:#b82432"><span style="color:#b82432;"><strong>དུས་རབས་ཀྱི་ཅོང་སྒྲ།</strong></span></h2>
+</td>
+<td style="width: 134.683px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="https://www.tibetitw.com/"target="_blank">ཆ་འཕྲིན་ལག་རྩལ།</a></span></h3>
+</td>
+<td style="width: 139.267px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.monlamit.com"target="_blank">སྨོན་ལམ་ཚན་རྩལ།</a></span></h3>
+</td>
+<td style="width: 134.65px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.amahoo.cn/"target="_blank">ཨེ་མ་ཧོ།</a></span></h3>
+</td>
+<td style="width: 140.183px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.yalasoo.com"target="_blank">ཡ་ལ་སོ།</a></span></h3>
+</td>
+<td style="width: 144.8px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.bodyig.net/"target="_blank">མཉེན་ཆས་གླིང་།</a></span></h3>
+</td>
+<td style="width: 137.433px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.yslnsat.com"target="_blank">སྤྲིན་གྱི་ཕོ་ཉ།</a></span></h3>
+</td>
+<td style="width: 142.95px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.luozang.com"target="_blank">བློ་བཟང་ཚན་རྩལ།</a></span></h3>
+</td>
+</tr>
+<tr style="height: 16.0167px;">
+<td style="width: 134.683px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://yangkug.com/"target="_blank">གཡང་ཁུག</a></span></h3>
+</td>
+<td style="width: 139.267px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.ysangz.com/"target="_blank">ཡུམ་སེང་འབྲུག</a></span></h3>
+</td>
+<td style="width: 134.65px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.tbmgar.com/SWS.html"target="_blank">ཤེས་རབ་མ་ལག</a></span></h3>
+</td>
+<td style="width: 140.183px; height: 16.0167px; text-align: center;">
+<h2><span style="color: #000000;"><a style="color: #000000;" href="https://www.bo1376.com"target="_blank">གེ་སར་རྟ་རྫི།</a></span></h2>
+</td>
+<td>
+<h3 style="text-align: center;"><span style="color: #000000;"><a style="color: #000000;" href="https://tibrooster.net/"target="_blank">ཟུངས་ཚུལ་ལག་རྩལ།</a></span></h3>
+</td>
+<td style="width: 137.433px; height: 16.0167px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="https://www.bo1376.com/sumdhak"target="_blank">སུམ་རྟགས་དྲ་བ།</a></span></h3>
+</td>
+<td style="width: 142.95px; height: 16.0167px; text-align: center;"> </td>
+</tr>
+</tbody>
+</table>
+<br>
+<table style="font-family:Monlam Uni OuChan2; src: url(' /Monlam Uni OuChan2.ttf '), url('/Monlam Uni OuChan2.eot') height: 56px; width: 1193px; border-color: #fcfcfc; background-color: #ffffff; margin-left: auto; margin-right: auto;background-image: url(img/bg.jpg); background-repeat: repeat;">
+<tbody>
+<tr style="height: 16px;">
+<td style="width: 151px; height: 16px; text-align: center; vertical-align: top;" rowspan="4">
+<h2 style="text-align: right;color:#b82432"><span style="color:#b82432;"><strong>ཧི་མ་ལ་ཡའི་ཕར་ཚུར།<br></strong></span></h2>
+</td>
+<td style="width: 136px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.tibetology.ac.cn/fg/zgzx/channel/zangxuelunzhusuoyin.html"target="_blank">བོད་རིག་པ་དྲ་བ།</a></span></h3>
+</td>
+<td style="width: 141.983px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="https://utsangculture.com/"target="_blank">དབུས་གཙང་རིག་གནས།</a></span></h3>
+</td>
+<td style="width: 135.017px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="https://bo.wikipedia.org/wiki/Wikipedia:%E0%BD%82%E0%BD%99%E0%BD%BC%E0%BC%8B%E0%BD%84%E0%BD%BC%E0%BD%A6%E0%BC%8D"target="_blank">ཝེ་ཁེ་རིག་མཛོད།</a></span></h3>
+</td>
+<td style="width: 142px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="https://www.tbrc.org/"target="_blank">ནང་བསྟན་རིག་མཛོད།</a></span></h3>
+</td>
+<td style="width: 147px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.tibetology.ac.cn/fg/zgzx/channel/zangxuelunzhusuoyin.html"target="_blank">འཛུགས་སྐྲུན་རིག་པ།</a></span></h3>
+</td>
+<td style="width: 139px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.tibetology.ac.cn/fg/zgzx/channel/zangxuelunzhusuoyin.html"target="_blank">བོད་ཆོས་ཞིབ་འཇུག</a></span></h3>
+</td>
+<td style="width: 145px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.himalayane.com/"target="_blank">ཧི་མ་ལའི་དཔེམཛོད།</a></span></h3>
+</td>
+</tr>
+<tr style="height: 16px;">
+<td style="width: 136px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="https://www.tashimannox.com/"target="_blank" text-decoration:none>བཀྲ་ཤིས་ཡིག་རྩལ།</a></span></h3>
+</td>
+<td style="width: 141.983px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.dtab.uni-bonn.de/tibdoc/index1.htm"target="_blank"text-decoration:none>ལོ་རྒྱུས་ཡིག་ཆ།</a></span></h3>
+</td>
+<td style="width: 135.017px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://sikkimexpress.com/"target="_blank">འབྲས་ལྗོངས་མྱུར་འཕྲིན།</a></span></h3>
+</td>
+<td style="width: 142px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://tibetanstudies.forumprod.com/"target="_blank"text-decoration:none>གཙུག་ལག་ཞིབ་དཔྱོད།</a></span></h3>
+</td>
+<td style="width: 147px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.rigpawiki.org/"target="_blank">རིག་པའི་རིག་མཛོད།</a></span></h3>
+</td>
+<td style="width: 139px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="https://adarsha.dharma-treasure.org"target="_blank">དམ་ཆོས་བང་མཛོད།</a><br></span></h3>
+</td>
+<td style="width: 145px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://dnz.tsadra.org/index.php/Main_Page"target="_blank">ཙ་དྲ་གདམས་ངག</a></span></h3>
+</td>
+</tr>
+<tr style="height: 16px;">
+<td style="width: 136px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.bongdzi.com/"target="_blank">བོང་རྫི་དྲ་བ།</a><br></span></h3>
+</td>
+<td style="width: 141.983px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.tibetanhistory.net/"target="_blank">སྤྱི་ཚོགས་ལོ་རྒྱུས།</a></span></h3>
+</td>
+<td style="width: 135.017px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.dongyondan.cn/"target="_blank">ལྡོང་ཡོན་ཏན།</a></span></h3>
+</td>
+<td style="width: 142px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.dangsongnotes.com/"target="_blank">དྲང་སྲོང་ཟིན་བྲིས།</a></span></h3>
+</td>
+<td style="width: 147px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="https://www.serajeyrigzodchenmo.org/"target="_blank">སེས་བྱེས་རིག་མཛོད།</a></span></h3>
+</td>
+<td style="width: 139px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.library.gov.bt/"target="_blank">འབྲུག་དཔེ་མཛོད།</a></span></h3>
+</td>
+<td style="width: 145px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="www.lotsawahouse.org"target="_blank">ལོ་ཙཱའི་གཞིས་ཀ</a></span></h3>
+</td>
+</tr>
+<tr style="height: 16px;">
+<td style="width: 136px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.rebgongcul.com/bo/"target="_blank">རེབ་གོང་ཤེས་རིག</a></span></h3>
+</td>
+<td style="width: 141.983px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.dzongkha.gov.bt/"target="_blank">རྫོང་ཁ་ལྷན་ཚོགས།</a></span></h3>
+</td>
+<td style="width: 135.017px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="https://www.bondilan.org"target="_blank">བོན་གྱི་དྲིས་ལན།</a></span></h3>
+</td>
+<td style="width: 142px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://nitarthadigitallibrary.org/xtf/search"target="_blank">ནི་ཏཱརྠ།</a></span></h3>
+</td>
+<td style="width: 147px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.tibetcul.com/haiwai/"target="_blank">ཕྱིར་མིག</a></span></h3>
+</td>
+<td style="width: 139px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://lib.xzmy.edu.cn/newslist?cid=101"target="_blank">བོད་རིག་ཉེ་འཕྲིན།</a></span></h3>
+</td>
+<td style="width: 145px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.51papers.com/lw/H214-1.htm"target="_blank">བོད་ཡིག་དཔྱད་རྩོམ།</a></span></h3>
+</td>
+</tr>
+</tbody>
+</table>
+<br>
+<table style="font-family:Monlam Uni OuChan2; src: url(' /Monlam Uni OuChan2.ttf '), url('/Monlam Uni OuChan2.eot') height: 54px; width: 1191.63px; border-color: #fcfcfc; background-color: #ffffff; margin-left: auto; margin-right: auto;background-image: url(img/bg.jpg); background-repeat: repeat;">
+<tbody>
+<tr style="height: 16px;">
+<td style="width: 150px; height: 32px; text-align: center; vertical-align: top;" rowspan="2">
+<h2 style="text-align: right; color:#b82432"><span style="color:#b82432;"><strong>སྤྱི་ཚོགས་ཞབས་ཞུ།<br></strong></span></h2>
+</td>
+<td style="width: 135px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://luobulin.com/"target="_blank">ཁྲིམས་ལུགས།</a><br></span></h3>
+</td>
+<td style="width: 141px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://trimleng.com"target="_blank">ཁྲིམས་གླེང་དྲ་བ།</a></span></h3>
+</td>
+<td style="width: 136px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.titi3.com/index.php/Home/Index/index_tib"target="_blank">བྷོ་ཊའི་ལོ་ཙཱ།</a></span></h3>
+</td>
+<td style="width: 142px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="https://crdb.webnode.com/"target="_blank">རྨ་རྒྱལ་སྦོམ་ར།</a><br></span></h3>
+</td>
+<td style="width: 146px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="https://changsa.org/"target="_blank">ཆང་ས་དྲ་བ།</a></span></h3>
+</td>
+<td style="width: 139px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.gesar8.com/"target="_blank">གླིང་གེ་སར།</a></span></h3>
+</td>
+<td style="width: 146.633px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.tsaluma.com"target="_blank">ཚ་ལུ་མ།</a></span></h3>
+</td>
+</tr>
+<tr style="height: 16px;">
+<td style="width: 135px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.tibetebook.com/"target="_blank">བོད་ཀྱི་རིག་མཛོད།</a></span></h3>
+</td>
+<td style="width: 141px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.tibetanqa.com/"target="_blank">དྲི་བ་ཀུན་འདུས།</a></span></h3>
+</td>
+<td style="width: 136px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://ti.zangdiyg.com/Article/detail/id/6568.html"target="_blank">ཨེ་འགོག</a></span></h3>
+</td>
+<td style="width: 142px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.sherig.org/"target="_blank">ཤེས་རིག</a></span></h3>
+</td>
+<td style="width: 146px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.malongwenhua.com/" target="_blank">རྨ་ཀླུང་རིག་གནས།</a></span></h3>
+</td>
+<td style="width: 146px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="http://www.gesar8.com/" target="_blank">གེ་སར་རིག་གནས།</a></span></h3>
+</td>
+<td style="width: 146px; height: 16px; text-align: center;">
+<h3><span style="color: #000000;"><a style="color: #000000;" href="https://www.tibrooster.net/" target="_blank">དེ་ཕོ་གསར་འགྱུར།</a></span></h3>
+</td>
+</tr>
+</tbody>
+</table>
+<br>
+<br>
+<h1 style="text-align: center; color:#b82432"><span style="font-family:Monlam Uni OuChan2; src: url(' /Monlam Uni OuChan2.ttf '), url('/Monlam Uni OuChan2.eot') color: #000000;">བོད་ཡིག་དོན་དུ་གཉེར།</span></h1>
+<br>
+<br>
+<footer>
+	<div style="font-family:Monlam Uni OuChan2; src: url(' /Monlam Uni OuChan2.ttf '), url('/Monlam Uni OuChan2.eot') width: auto;height:128px;background-color:#fff; position:relative;background-image: url(img/bg.jpg); background-repeat: repeat;">
+<center>
+	ངེད་ཚང་མ་དྲ་བར་ཕེབས་པའི་རིགས་མཐུན་དྲ་གྲོགས་ཡོངས་ལ་འཚམས་འདྲི་བཀྲ་ཤིས་བདེ་ལེགས་ཞུ། དྲ་མཛོད་འདིས་སྔར་ལས་ལྷག་པར་འཐུས་ཚང་ཅན་དུ་བསྒྱུར་ཆེད།
+སྐུ་ཉིད་ལ་བོད་ཡིག་གི་དྲ་གནས་དང་དེ་འབྲེལ་ཆ་འཕྲིན་ཡོད་ན།  ང་ཚོའི་འབྲེལ་ལམ་བརྒྱུད་ནས་མཁོ་སྤྲོད་གནང་རོགས། 18989993920
+  <p style="font-family:Monlam Uni OuChan2; src: url(' /Monlam Uni OuChan2.ttf '), url('/Monlam Uni OuChan2.eot') ">དྲ་ཚིགས་འདིའི་དབང་ཆ་ཡོད་ཚད་གེ་སར་རྟ་རྫི་དྲ་བར་དབང།  མཆོག་མཆན་མ་ཐོབ་པར་འདྲ་བཤུས་བྱེད་མི་ཆོག</p>
+  <p style="color:#b82432; font-family:Monlam Uni OuChan2; src: url(' /Monlam Uni OuChan2.ttf '), url('/Monlam Uni OuChan2.eot') ">©གེ་སར་རྟ་རྫི།</p> 
+</center>
+	</div>
+</footer>
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1274808829'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1274808829%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+	</body>
+</head>
